@@ -1,0 +1,5 @@
+<markdown class="variable-binding" [data]="markdown"></markdown>
+<markdown class="variable-binding" [data]="'### Example \n Click on the box below:'"></markdown>
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" (click)="toggle()">
+  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
